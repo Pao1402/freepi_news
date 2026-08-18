@@ -1,0 +1,10 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:freepi_news/main.dart';
+
+void main() {
+  testWidgets('La app inicia correctamente', (WidgetTester tester) async {
+    await tester.pumpWidget(const FreepiNewsApp());
+
+    expect(find.text('Freepi News'), findsOneWidget);
+  });
+}

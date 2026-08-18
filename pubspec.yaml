@@ -1,0 +1,44 @@
+name: freepi_news
+description: "Aplicación móvil de noticias conectada a WordPress REST API."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  dio: ^5.9.0
+  provider: ^6.1.5
+  cached_network_image: ^3.4.1
+  html: ^0.15.6
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.2
+  share_plus:  11.1.0
+  flutter_widget_from_html: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#673AB7"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  min_sdk_android: 21
